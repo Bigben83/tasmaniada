@@ -7,7 +7,7 @@ import logging
 
 def councildas():
     applications_url = \
-        'https://eservices.dorset.tas.gov.au/eservice/dialog/daEnquiry/currentlyAdvertised.do?function_id=521&nodeNum=12237'
+        'https://eservices.dorset.tas.gov.au/eservice/dialog/daEnquiry/currentlyAdvertised.do?function_id=521&nodeNum=19534'
     html = scraperwiki.scrape(applications_url)
     date_scraped = datetime.now().isoformat()
     page = BeautifulSoup(html, 'html.parser')
